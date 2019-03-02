@@ -1,0 +1,9 @@
+<div class="container">
+	<%= simple_form_for @product do |f| %>
+	  <%= f.input :name %>
+	  <%= f.input :supplier_id, collection: @suppliers, :label_method => :name, :value_method => :id, :label => 'Supplier', :include_blank => false %>
+	  <%= f.input :capacity, collection: @capacity, include_blank: false %>
+	  <%= f.input :full_stock %>
+	  <%= f.submit "add product", class: "btn btn-primary" %>
+	<% end %>
+</div>
