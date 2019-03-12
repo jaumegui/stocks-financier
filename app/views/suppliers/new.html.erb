@@ -1,0 +1,8 @@
+<div class="container">
+  <%= simple_form_for @supplier do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :phone %>
+    <%= f.submit "Create Supplier", class: "btn btn-primary" %>
+  <% end %>
+</div>

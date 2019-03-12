@@ -1,0 +1,5 @@
+<ul>
+  <% @order.each do |order| %>
+    <li><%= order.product.name %>, <%= order.product.full_stock %></li>
+  <% end %>
+</ul>

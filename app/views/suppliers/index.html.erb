@@ -1,0 +1,9 @@
+
+<div class="container">
+  <ul>
+    <% @suppliers.each do |supplier| %>
+      <li><%= supplier.name %>, <%= link_to "delete", supplier_path(supplier), method: :delete %></li>
+    <% end %>
+  </ul>
+  <%= link_to 'Add a supplier', new_supplier_path, class: 'btn btn-success' %>
+</div>
